@@ -12,6 +12,12 @@ public class PagesMainSearch {
         $(byName("q")).val(word).pressEnter();
         return new CheckSearchResults();
     }
+
+    public CheckSearchResults checkHaveResults() {
+        CheckSearchResults i = new CheckSearchResults();
+        i.checkHaveResults();
+        return i;
+    }
 }
 
 /*

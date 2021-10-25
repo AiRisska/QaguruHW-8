@@ -17,7 +17,8 @@ public class TestSearchWordSwitchMenu {
         lib.searchOnAuthorToday("Маг")
                 .checkSearchWord("Маг")
                 .checkHaveResults()
-                .switchMenu(menuItem);
+                .switchMenu(menuItem)
+        ;
     }
 
     @EnumSource(value = MenuItem.class)
@@ -26,6 +27,7 @@ public class TestSearchWordSwitchMenu {
         lib.searchOnAuthorToday("Город")
                 .checkSearchWord("Город")
                 .checkHaveResults()
-                .switchMenu(menuItem);
+                .switchMenu(menuItem)
+        ;
     }
 }
