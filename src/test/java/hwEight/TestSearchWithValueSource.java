@@ -15,7 +15,7 @@ public class TestSearchWithValueSource {
             "Маг"
     })
     @ParameterizedTest(name = "Поиск слова {0}")
-    void searchWord(String word) {
+    void searchWord(String word){
         lib.searchOnAuthorToday(word)
                 .checkSearchWord(word)
                 .checkHaveResults();

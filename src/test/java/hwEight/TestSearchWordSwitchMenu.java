@@ -13,7 +13,7 @@ public class TestSearchWordSwitchMenu {
 
     @EnumSource(value = MenuItem.class)
     @ParameterizedTest(name = "Поиск слова Маг в меню")
-    void searchMagWithSwitchMenu(MenuItem menuItem) {
+    void searchMagWithSwitchMenu(MenuItem menuItem){
         lib.searchOnAuthorToday("Маг")
                 .checkSearchWord("Маг")
                 .checkHaveResults()
@@ -23,7 +23,7 @@ public class TestSearchWordSwitchMenu {
 
     @EnumSource(value = MenuItem.class)
     @ParameterizedTest(name = "Поиск слова Город в меню")
-    void searchTownWithSwitchMenu(MenuItem menuItem) {
+    void searchTownWithSwitchMenu(MenuItem menuItem){
         lib.searchOnAuthorToday("Город")
                 .checkSearchWord("Город")
                 .checkHaveResults()
